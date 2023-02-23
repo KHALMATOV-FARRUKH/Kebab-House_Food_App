@@ -29,10 +29,10 @@
         android:icon="@mipmap/ic_launcher"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
-        android:label="AppBiz Shop">
+        android:label="Kebab-House">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD6ToXeb6P0NkorrEh5QOO9C-yydafSo-4" />
+            android:value="AIzaSyALBZsa0twzArkofa9fWFge5OXO3yl0y6k" />
 
         <activity
             android:name=".MainActivity"

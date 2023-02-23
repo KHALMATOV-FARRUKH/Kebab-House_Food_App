@@ -2,7 +2,7 @@ importScripts("https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js");
 importScripts("https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js");
 
 firebase.initializeApp({
-  apiKey: "AIzaSyCaCSJ0BZItSyXqBv8vpD1N4WBffJeKhLQ",
+  apiKey: "AIzaSyALBZsa0twzArkofa9fWFge5OXO3yl0y6k",
   authDomain: "grofresh-3986f.firebaseapp.com",
   projectId: "grofresh-3986f",
   storageBucket: "grofresh-3986f.appspot.com",

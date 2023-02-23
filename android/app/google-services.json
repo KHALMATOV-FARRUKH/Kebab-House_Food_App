@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "250728969979",
-    "project_id": "grofresh-3986f",
-    "storage_bucket": "grofresh-3986f.appspot.com"
+    "project_number": "65965202414",
+    "project_id": "kebab-house-eb4c0",
+    "storage_bucket": "kebab-house-eb4c0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:250728969979:android:375fde0efc7db10a75a25e",
+        "mobilesdk_app_id": "1:65965202414:android:27d3069368dca6f45d8cff",
         "android_client_info": {
-          "package_name": "com.appbiz.shop"
+          "package_name": "com.zarafshan.kebab.house.ru"
         }
       },
       "oauth_client": [
         {
-          "client_id": "250728969979-9nqsmhb458assn7q1a68cgasgg5q5mtg.apps.googleusercontent.com",
+          "client_id": "65965202414-0n1d3ilrv18upm0004sf9n7ubt94ff44.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDTFm7oPur3xhZbVmCkgFkGFcR-44h6Gyo"
+          "current_key": "AIzaSyALBZsa0twzArkofa9fWFge5OXO3yl0y6k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "250728969979-9nqsmhb458assn7q1a68cgasgg5q5mtg.apps.googleusercontent.com",
+              "client_id": "65965202414-0n1d3ilrv18upm0004sf9n7ubt94ff44.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

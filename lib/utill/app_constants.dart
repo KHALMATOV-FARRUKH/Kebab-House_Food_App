@@ -2,9 +2,9 @@ import 'package:flutter_grocery/data/model/response/language_model.dart';
 import 'images.dart';
 
 class AppConstants {
-  static const String APP_NAME = 'AppBiz Shop';
+  static const String APP_NAME = 'Kebab-House';
   static const double APP_VERSION = 1.2;
-  static const String BASE_URL = 'http://alidrop.site';
+  static const String BASE_URL = 'http://zarafshan-kebab-house.ru';
   static const String CONFIG_URI = '/api/v1/config';
   static const String BANNER_URI = '/api/v1/banners';
   static const String CATEGORY_URI = '/api/v1/categories';
