@@ -28,7 +28,8 @@ class ColorResources {
     return Provider.of<ThemeProvider>(context).darkTheme ? Color(0xFF011201) : Color(0xFFecfbec);
   }
   static Color getTextColor(BuildContext context) {
-    return Provider.of<ThemeProvider>(context).darkTheme ? Color(0xFFFFFFFF).withOpacity(0.6) : Color(0xFF1F1F1F);
+    return Provider.of<ThemeProvider>(context).darkTheme ? Color(0xFFFF0000).withOpacity(0.6) : Color(
+        0xFF0C0000);
   }
   static Color getProductDescriptionColor(BuildContext context) {
     return Provider.of<ThemeProvider>(context).darkTheme ? Color(0xFFFFFFFF) : Color(0xFF1F1F1F);
@@ -73,7 +74,7 @@ class ColorResources {
   }
   static const Color BORDER_COLOR = Color(0xFFDCDCDC);
   static const Color SEARCH_BG = Color(0xFFF4F7FC);
-  static const Color RED_COLOR = Color(0xFFFC6A57);
+  static const Color RED_COLOR = Color(0xFF5CFC57);
   static const Color Black_COLOR = Color(0xFF000000);
   static const Color CARD_SHADOW_COLOR = Color(0xFFA7A7A7);
   static const Color FOOTER_COL0R = Color(0xFFFFDDD9);

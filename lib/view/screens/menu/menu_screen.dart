@@ -88,6 +88,7 @@ class MenuWidget extends StatelessWidget {
                             onPressed: () => drawerController.toggle(),
                           ),
                         ):SizedBox(),
+                        SizedBox(height: 15),
                         Consumer<ProfileProvider>(
                           builder: (context, profileProvider, child) => Row(
                             children: [
@@ -101,7 +102,7 @@ class MenuWidget extends StatelessWidget {
                                       placeholder: Images.placeholder(context),
                                       image: '${Provider.of<SplashProvider>(context, listen: false).baseUrls.customerImageUrl}/'
                                           '${profileProvider.userInfoModel != null ? profileProvider.userInfoModel.image : ''}',
-                                      height: 50, width: 50, fit: BoxFit.cover,
+                                      height: 60, width: 60, fit: BoxFit.cover,
                                       imageErrorBuilder: (c, o, s) => Image.asset(Images.placeholder(context), height: 50, width: 50, fit: BoxFit.cover),
                                     ) : SizedBox() : Image.asset(Images.placeholder(context), height: 50, width: 50, fit: BoxFit.cover),
                                   ),
@@ -144,7 +145,7 @@ class MenuWidget extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(height: 50),
+                        SizedBox(height: 30),
                        ResponsiveHelper.isDesktop(context) ? SizedBox() : MenuButton(drawerController: drawerController, index: 0, icon: Images.home, title: getTranslated('home', context)),
                         MenuButton(drawerController: drawerController, index: 1, icon: Images.list, title: getTranslated('all_categories', context)),
                         MenuButton(drawerController: drawerController, index: 2, icon: Images.order_bag, title: getTranslated('shopping_bag', context)),

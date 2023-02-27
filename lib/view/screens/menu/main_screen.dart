@@ -100,12 +100,10 @@ class _MainScreenState extends State<MainScreen> {
                       widget.drawerController.toggle();
                     }),
                 title: splash.pageIndex == 0 ? Row(children: [
-                  Image.asset(Images.app_logo, width: 25),
+                  Image.asset(Images.app_logo, width: 30),
                   SizedBox(width: Dimensions.PADDING_SIZE_SMALL),
-                  Expanded(child: Text(
-                    AppConstants.APP_NAME, maxLines: 1, overflow: TextOverflow.ellipsis,
-                    style: poppinsMedium.copyWith(color: Theme.of(context).primaryColor),
-                  )),
+                  Expanded(child: Image.asset(Images.app_name, height: 25,),),
+
                 ]) : Text(
                   getTranslated(_keys[splash.pageIndex], context),
                   style: poppinsMedium.copyWith(fontSize: Dimensions.FONT_SIZE_LARGE, color: Theme.of(context).primaryColor),

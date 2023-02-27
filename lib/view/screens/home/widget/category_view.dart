@@ -35,7 +35,7 @@ class _CategoryViewState extends State<CategoryView> {
               padding: const EdgeInsets.only(top: Dimensions.PADDING_SIZE_DEFAULT),
               child: Align(
                 alignment: Alignment.center,
-                child: Text(getTranslated('category', context),style: poppinsBold.copyWith(fontSize: Dimensions.FONT_SIZE_OVER_LARGE, color: ColorResources.getTextColor(context))),
+                child: Text(getTranslated('category', context),style: MontserratBlack.copyWith(fontSize: Dimensions.FONT_SIZE_OVER_LARGE, color: ColorResources.getTextColor(context))),
               ),
             ) : Padding(
               padding: EdgeInsets.fromLTRB(0, 5, 10, 0),
@@ -76,9 +76,11 @@ class _CategoryViewState extends State<CategoryView> {
                           ? null
                           : [BoxShadow(color: Colors.grey[200], spreadRadius: 1, blurRadius: 5)],
                     ),
-                    child: Column(children: [
+                    child:
+                    Column(children: [
+                      SizedBox(height: 10),
                       Expanded(
-                        flex: ResponsiveHelper.isDesktop(context) ? 7 : 6,
+                        flex: ResponsiveHelper.isDesktop(context) ? 8 : 7,
                         child: Container(
                           margin: EdgeInsets.all(Dimensions.PADDING_SIZE_EXTRA_SMALL),
                           padding: EdgeInsets.symmetric(horizontal: Dimensions.PADDING_SIZE_DEFAULT),
@@ -96,13 +98,13 @@ class _CategoryViewState extends State<CategoryView> {
                               imageErrorBuilder: (c, o, s) => Image.asset(Images.placeholder(context), height: 100, width: 100, fit: BoxFit.cover),
                             ),
                           ) : Container(
-                            height: 100, width: 100,
+                            height: 100, width: 60,
                             decoration: BoxDecoration(
                               shape: BoxShape.circle,
-                              color: Theme.of(context).primaryColor,
+                              color: Theme.of(context).primaryColor.withOpacity(0.8),
                             ),
                             alignment: Alignment.center,
-                            child: Text('${category.categoryList.length - 5}+', style: poppinsRegular.copyWith(color: Theme.of(context).cardColor)),
+                            child: Text('${category.categoryList.length - 5}+', style: MontserratBold.copyWith(color: Theme.of(context).cardColor)),
                           ),
                         ),
                       ),
@@ -112,7 +114,7 @@ class _CategoryViewState extends State<CategoryView> {
                           padding: EdgeInsets.all(Dimensions.PADDING_SIZE_EXTRA_SMALL),
                           child: Text(
                             index != 5 ? category.categoryList[index].name : getTranslated('view_all', context),
-                            style: poppinsRegular,
+                            style: MontserratSemiBold,
                             textAlign: TextAlign.center,
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,

@@ -97,7 +97,7 @@ class _AllCategoryScreenState extends State<AllCategoryScreen> {
                                   return ListTile(
                                     onTap: () {
                                       Navigator.of(context).pushNamed(
-                                        RouteHelper.getCategoryProductsRouteNew(id: categoryProvider.subCategoryList[index-1].id,subcategoryName: categoryProvider.subCategoryList[index-1].name),
+                                        RouteHelper.getCategoryProductsRouteNew(id: categoryProvider.subCategoryList[index-1].id),
                                       );
                                     },
                                     title: Text(categoryProvider.subCategoryList[index-1].name,

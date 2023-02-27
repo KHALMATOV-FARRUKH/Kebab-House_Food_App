@@ -8,7 +8,8 @@ import 'package:flutter_grocery/utill/styles.dart';
 class TitleWidget extends StatelessWidget {
   final String title;
   final Function onTap;
-  TitleWidget({@required this.title, this.onTap});
+  TitleWidget({@required this.title, this.onTap,});
+
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class TitleWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 12),
       margin: ResponsiveHelper.isDesktop(context) ? const EdgeInsets.symmetric(horizontal: 5) : EdgeInsets.zero,
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-        Text(title, style: ResponsiveHelper.isDesktop(context) ?  poppinsSemiBold.copyWith(fontSize: Dimensions.FONT_SIZE_OVER_LARGE, color: ColorResources.getTextColor(context)) : poppinsMedium),
+        Text(title, style: ResponsiveHelper.isDesktop(context) ?  poppinsRegular.copyWith(fontSize: Dimensions.FONT_SIZE_OVER_LARGE, color: ColorResources.getTextColor(context)) : MontserratExtraBold.copyWith(fontSize: Dimensions.FONT_SIZE_DEFAULT, color: ColorResources.getTextColor(context).withOpacity(0.9))),
         onTap != null ? InkWell(
           onTap: onTap,
           child: Padding(

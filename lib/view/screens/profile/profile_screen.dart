@@ -281,6 +281,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 style: poppinsRegular.copyWith(fontSize: Dimensions.FONT_SIZE_DEFAULT),
                               ),
                               Divider(),
+
                             ],
                           ),
                         ),

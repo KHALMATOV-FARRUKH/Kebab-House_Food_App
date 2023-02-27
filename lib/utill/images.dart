@@ -40,6 +40,7 @@ class Images {
 
   // Image
   static const String app_logo = 'assets/image/app_logo.png';
+  static const String app_name = 'assets/image/kebab-house.png';
   static const String on_boarding_1 = 'assets/image/on_boarding_1.png';
   static const String on_boarding_2 = 'assets/image/on_boarding_2.png';
   static const String on_boarding_3 = 'assets/image/on_boarding_3.png';
